@@ -1,0 +1,110 @@
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Krisztian}
+\familyname{Szabo}
+%\title{A great man}                          % optional, remove / comment the line if not wanted
+% \address{Nairobi}{Kenya}    % optional, remove / comment the line if not wanted
+\mobile{+36 30 914 6123}                     % optional, remove / comment the line if not wanted
+\email{thenonameguy24@gmail.com}                          % optional, remove / comment the line if not wanted
+\homepage{thenonameguy.com}                    % optional, remove / comment the line if not wanted
+\extrainfo{{\href{http://blog.thenonameguy.com}{blog.thenonameguy.com}}}            % optional, remove / comment the line if not wanted
+%\quote{The quieter you become, the more you are able to hear...}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Experience}
+\cventry{2013--current}{Full-stack developer}{Netlife}{Budapest, Hungary}{}{Managing multiple IT solutions from the bytes up to the GUI\newline{}
+  \begin{itemize}
+  \item Write a JSON-RPC 2.0 Java server for handling an international carrier services internal communication with any provided webservice
+  \item Redesign and improve some legacy PHP applications for our previous clients
+  \item Implement frontend changes on one of the biggest press firm in Hungary,switch to LESS, reduce page load time by magnitude of 3
+  \item Write a publicly avaliable JSON REST API in Go to interface with our CRM solution: BeeCRM
+  \item Develop a little toy Firefox OS project to demonstrate the use of this API
+  \item Maintain, configure and deploy internal test environments for the aforementioned technologies
+  \item Give small presentations to improve the way we develop software
+  \end{itemize}}
+
+  \cventry{2013.08--2013.09}{Software Tester}{iData}{Budapest, Hungary}{}{Automation of testing procedures for a GPS tracking algorithm\newline{}
+  \begin{itemize}
+  \item Wrote small, modular Python scripts that automated 80\% of the testing process, freeing up resources
+  \item In the free time created, helped solve algorithm problems and created a GIS content transformation pipeline
+  \item Helped the webdev team transforming the code base to CoffeeScript, reducing code size and complexity
+  \end{itemize}}
+
+\section{IT skills}
+\cvitem{Proficient}{Go, PHP, Git, Vim, Shells(bash,zsh,fish), GNU coreutils, Redmine, Frontend technologies (HTML5/JS/CSS3) }
+\cvitem{Intermediate}{C\#, Python, C/C++, Java, Lua, MySQL, PostgreSQL, Apache httpd, Tomcat, Angular, Knockout}
+\cvitem{Beginner}{Haskell, MongoDB, RethinkDB, \LaTeX}
+
+\section{Education}
+\cventry{2013-2014}{Faculty of Informatics}{Eotvos Lorand University}{Budapest}{}{Dropped out because of financial and family issues}  % arguments 3 to 6 can be left empty
+
+\section{Languages}
+\cvitemwithcomment{Hungarian}{Native}{Written and spoken}
+\cvitemwithcomment{English}{Proficient}{Written and spoken}
+\cvitemwithcomment{German}{Beginner}{Written and spoken}
+
+\section{Interests}
+\cvitem{Open-source}{Contributing to open-source software projects}
+\cvitem{Pragmatic IT}{Bringing new, fresh ideas to IT that broaden the possibilites of society}
+\cvitem{Greyhat}{Enjoying smart solutions to hard problems}
+\cvitem{Teaching}{Sharing my knowledge to give back to the community}
+\cvitem{GNU/Linux}{Enjoying the thoughtful design of these distros: Arch, Debian, Gentoo}
+\cvitem{Music}{Playing the guitar}
+
+%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `cv.tex'.
